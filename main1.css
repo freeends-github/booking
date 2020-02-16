@@ -1,0 +1,629 @@
+@font-face{
+    font-family: "myFirstfont";
+    src: url(https://www.dafontfree.net/freefonts-perpetua-f138332.htm)format("ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.deti{
+    background-image: url(./Booking/Image\ 3.png);
+    background-position-y: -80px;
+    background-position-x: -220px;
+    background-size: 1800px  1020px;
+    background-repeat: no-repeat;
+     /* background: transparent url(./Image\ 3.png) 0% 0% no-repeat padding-box;  */
+    height: 1500px; 
+   opacity: 1;
+}
+   
+
+
+
+  
+header{
+    margin-top: 20px;
+    margin-left: 10.8%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo{
+   position: relative;
+   top: -10px;
+    width: 82px;
+    height: 60px;
+   vertical-align: middle;
+}
+
+.home{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0.54px;
+    color: #000000;
+    opacity: 1;
+    
+}
+li{
+list-style-type: none;
+display: inline-block;
+margin-left: 20px;
+}
+h3{
+    position: relative;
+    top: -5px;
+margin-left: 5px;
+display: inline;
+text-align: left;
+font: Bold 30px Perpetua;
+letter-spacing: 1.2px;
+color: #4B4B4B;
+opacity: 1;
+vertical-align: middle;
+}
+.Logo{
+    display: inline;
+}
+ul{
+   
+    margin-left: 210px;
+    
+}
+.phone{
+    background-color: #FE8369;
+    border-radius: 5px;
+    padding: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    box-shadow: 0px 15px 15px #00000029;
+}
+.phone_a{
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+.img_phone{
+    vertical-align: middle;
+    padding-right: 7px;
+}
+.home:hover,
+.home:focus
+{
+    border-bottom: 1px solid #FE8369;
+    opacity: 1;
+    padding-bottom: 5px;
+}
+.phone:hover{
+    border: 1px solid white;
+}
+.lets{
+    position: relative;
+    top: 130px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 100;
+    text-shadow: 0px 5px 20px #5030206B;
+}
+.best{
+    position: relative;
+    top: 125px;
+    text-align: center;
+    letter-spacing: 2.1px;
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 100;
+    text-shadow: 0px 5px 20px #5030206B;
+}
+
+
+
+.wrap{
+    margin: 0;
+    position: relative;
+    top: 157px;
+    left: 300px;
+    width: 710px;
+    height: 80px;
+
+    background-color: white;
+    border-radius: 5px;
+    /* box-shadow: 0px 20px 40px #50302029; */
+}
+
+.container {
+    margin-top: 10px;
+    padding: 10 px;
+    position: relative;
+    top: -3px;
+    margin-right: 0;
+  
+}
+  
+.select-box {
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    margin-left: 13px;
+  
+}
+  
+.select-box .options-container,
+.select-box .options-container1,
+.select-box .options-container2 {
+    background: white;
+    position: relative;
+    top: 25px;
+    width: 201px;
+    height: 120px;
+    /* padding-top: 50px; */
+    /* height: 100%; */
+    /* width: 100%; */
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    order: 1;
+}
+  
+.selected,
+.selected1, 
+.selected2{
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 0;
+    width: 185px;
+    
+    position: relative;
+    font-family:  'EB Garamond', serif;
+    text-align: left;
+    letter-spacing: 0.96px;
+    color: #4B4B4B;
+    font-size: 21px;
+    background-image: url(./Booking/6.png);
+    background-repeat: no-repeat;
+    background-position: 170px -1px;
+  
+    order: 0;
+}
+.select-box .options-container.active,
+.select-box .options-container1.active,
+.select-box .options-container2.active {
+  
+    opacity: 1;
+    overflow-y: scroll;
+    
+}
+
+
+.select-box .options-container::-webkit-scrollbar,
+.select-box .options-container1::-webkit-scrollbar,
+.select-box .options-container2::-webkit-scrollbar  {
+    width: 8px;
+    background:  #FE8369;
+    border-radius: 0 5px 5px 0;
+}
+  
+.select-box .options-container::-webkit-scrollbar-thumb,
+.select-box .options-container1::-webkit-scrollbar-thumb,
+.select-box .options-container2::-webkit-scrollbar-thumb {
+    background: rgba(209, 203, 203,0.5);
+    border-radius: 0 5px 5px 0;
+    
+}
+
+.select-box .option,
+.selected,
+.select-box .option1,
+.selected1,
+.select-box .option2,
+.selected2 {
+    
+  padding-left: 10px;
+  cursor: pointer;
+
+ 
+}
+
+.select-box .option:hover,
+.select-box .option1:hover,
+.select-box .option2:hover {
+  background: #00000029 ;
+  
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio ,
+.select-box .option1 .radio ,
+.select-box .option2 .radio {
+  display: none;
+  padding: 10px;
+  
+}
+
+.label{
+    
+    font-family:  'EB Garamond', serif;
+    text-align: left;
+    letter-spacing: 0.96px;
+    line-height: 43px;
+    color: #4B4B4B;
+    font-size: 21px;
+    height:50px;
+
+    
+    
+    
+    
+   
+}
+
+.upper_p{
+    
+    position: relative;
+    padding-top: 20px;
+    
+    left: 15px;;
+    width: 106px;
+    height: 19px;
+    text-align: center;
+    font:  13px Montserrat;
+    letter-spacing: 0.48px;
+    color: #D4C9B6;
+    opacity: 1;
+
+}
+.upper_p1{
+    position: relative;
+    left: 8px;
+    top: 2px;
+
+}
+.upper_p2{
+    position: relative;
+    top: 2px;
+    left: 9px;
+    padding-bottom: 1px;
+}
+
+
+
+.vijat{
+    position: relative;
+    top: 100px;
+    left: 539px;
+    width: 0px;
+    height: 43px;
+    border: 1px solid #D5CAB8;
+    opacity: 1;
+}
+#d2{
+    position: relative;
+    left: 259px;
+    top: -196px;
+}
+.vijat1{
+    position: relative;
+    top: 56px;
+    left: 782px;
+    width: 0px;
+    height: 43px;
+    border: 1px solid #D5CAB8;
+    opacity: 1;
+
+}
+#d3{
+    position: relative;
+    left: 487px;
+    top: -388px;
+    margin-right: 0;
+    width: fit-content;
+}
+/* #prices{
+    position: relative;
+    top: -6px;
+   
+} */
+.options-container2.active{
+    margin-top: 1px;
+}
+
+.search{
+    cursor: pointer;
+    position: relative;
+    left: 1008px;
+    top: -13px;
+    width: 206px;
+    height: 80px;
+    background: #FE8369 0% 0% no-repeat padding-box;
+    border-radius: 0px 5px 5px 0px;
+    opacity: 1;
+    border-style: none;
+
+    text-align: center;
+    font: 20px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    
+}
+.search:focus{
+    border: 2px solid white;
+    outline: 0;
+    
+}
+
+.njerzit{
+    position: relative;
+    top: -560px;
+    width: 1519px;
+    height:  510px;
+    background: #F0E3D0 ; 
+    opacity: 1;
+    
+}
+#triangle-bottomleft {
+    position: relative;
+    top: 134px;
+    width: 0;
+    height: 0;
+    border-bottom: 377px solid white;
+    border-right: 741px solid transparent;
+    margin: 0;
+    padding: 0;
+   
+  }
+  .buyers h4,.agents h4, .sellers h4 {
+    position: absolute;
+    top: 341px;
+    left: 87px;
+    text-align: left;
+    font-family:  "MyFirstFont";
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #4B4B4B;
+    opacity: 1;
+
+}
+
+.buyers p, .agents p, .sellers p {
+    position: absolute;
+    top: 368px;
+    left: 87px;
+    text-align: left;
+    font:  13px Montserrat;
+    letter-spacing: 0;
+    color: #444444;
+    opacity: 1;
+}
+
+.buyers{
+    position: absolute;
+    box-sizing: border-box;
+    top: -180px;
+    left: 495px;
+    width: 294px;
+    height: 375px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #5030200D;
+    border-radius: 5px;
+    opacity: 1;
+    background-image: url(./Booking/buyersssss.png);
+    background-size: 225px 235px;
+    background-position: 35px 33px;
+}
+.vija-portokall1{
+    position: absolute;
+    top: 300px;
+    left: 35px;
+    width: 35px;
+    height: 1.2px;
+    background-color: #FE8369;
+
+}
+.buyers h4{
+    position: absolute;
+    top: 290px;
+    left: 80px;
+}
+.buyers p{
+    position: absolute;
+    top: 317px;
+    left: 80px;
+}
+
+.agents{
+    position: absolute;
+    top: -60px;
+    left: 149px;
+    width: 290px;
+    height: 438px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #5030200D;
+    border-radius: 5px;
+    opacity: 1;
+    background-image: url(./Booking/agentsssssssssss.png);
+    background-size: 210px 282px;
+    background-position: 40px 30px;
+    z-index: 2;
+}
+.vija-portokall2{
+    position: absolute;
+    top: 350px;
+    left: 40px;
+    width: 35px;
+    height: 2px;
+    background-color: #FE8369;
+
+}
+
+
+
+
+.sellers{
+    position: absolute;
+    top: 230px;
+    left: 495px;
+    width: 294px;
+    height: 392px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #5030200D;
+    border-radius: 5px;
+    opacity: 1;
+    background-image: url(./Booking/sellers.png);
+    background-size: 225px 235px;
+    background-position: 35px 33px;
+    z-index: 3;
+}
+
+.vija-portokall3{
+    position: absolute;
+    top: 310px;
+    left: 35px;
+    width: 35px;
+    height: 1.2px;
+    background-color: #FE8369;
+
+}
+.sellers h4{
+    position: absolute;
+    top: 301px;
+    left: 81px;
+}
+.sellers p{
+    position: absolute;
+    top: 328px;
+    left: 81px;
+}
+
+.teksti-majtas{
+    position: relative;
+    top: -476px;
+    left: 850px;
+    width: 500px;
+    height: 500px;
+
+}
+.teksti-majtas h1{
+    text-align: left;
+    font:  600 31px "myFirstFont"; 
+    line-height: 45px;
+    letter-spacing: 1.2px;
+    color: #4B4B4B;
+    opacity: 1;
+    
+}
+
+.vija-portokall{
+    position: absolute;
+    top: 100px;
+    width: 668px;
+    height: 2px;
+    background-color: #FE8369;
+    z-index: 40;
+
+}
+
+.teksti-majtas p {
+    position: absolute;
+    top: 130px;
+    text-align: left;
+    font:  13px/35px Montserrat;
+    letter-spacing: 0;
+    color: #4B4B4B;
+    opacity: 1;
+}
+.teksti-majtas .gjysma-dyte{
+    position: absolute;
+    top: 255px;
+}
+.teksti-majtas a{
+    position: absolute;
+    top: 460px;
+
+    width: 145px;
+    height: 35px;
+    background: #FE8369 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 20px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    color: white;
+    font:  15px/23px Muli;
+    letter-spacing: 0.54px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    background-image: url(./Booking/arrow-long.png);
+    background-repeat: no-repeat;
+    background-size: 18px 12px;
+    background-position: 125px 21px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.head_foto{
+    margin-left: 10.8%;
+    position: relative;
+    top: -350px;
+}
+.head_foto h2{
+    text-align: left;
+    font: Bold 35px/50px Perpetua;
+    letter-spacing: 1.2px;
+    color: #4B4B4B;
+    opacity: 1;
+
+}
+.vija-portokall4{
+    position: absolute;
+    left: -165px;
+    top: 60px;
+    width: 475px;
+    height: 2px;
+    background-color: #FE8369;
+}
+.head_foto p{
+    position: absolute;
+    top: 80px;
+    text-align: left;
+    font:  14px/30px Montserrat;
+    letter-spacing: 0;
+    color: #4B4B4B;
+    opacity: 1;
+}
+.filteri{
+    position: absolute;
+    top: 1800px;
+    left: 1190px;
+}
+.filteri button{
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    font: 18px/45px "MyFirstFont";
+    letter-spacing: 0.6px;
+    color: #151D41;
+    background-color: white;
+    border-style: none;
+    opacity: 1;
+    padding-right: 15px;
+    padding-bottom: 0;
+
+}
+.filteri button:hover, 
+.filteri button:focus{
+    cursor: pointer;
+    outline: 0;
+    border-bottom: 2px solid #FE8369;
+    
+
+}
