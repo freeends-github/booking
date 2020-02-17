@@ -46,3 +46,21 @@ optionsList2.forEach(q => {
     optionsContainer2.classList.remove("active");
   });
 });
+
+
+
+
+var $mediaElements = $('.foto');
+
+$('.filter_link').click(function(e){
+    e.preventDefault();
+    // get the category from the attribute
+    var filterVal = $(this).data('filter');
+
+    if(filterVal === 'all'){
+      $mediaElements.show();
+    }else{
+       // hide all then filter the ones to show
+       $mediaElements.hide().filter('.' + filterVal).show();
+    }
+});
