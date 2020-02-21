@@ -64,3 +64,14 @@ $('.filter_link').click(function(e){
        $mediaElements.hide().filter('.' + filterVal).show();
     }
 });
+
+
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".viewall").hide();
+  });
+  $("#show").click(function(){
+    $(".viewall").show();
+  });
+
+});

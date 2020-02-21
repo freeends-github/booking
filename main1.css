@@ -7,6 +7,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 .deti{
     background-image: url(./Booking/Image\ 3.png);
     background-position-y: -80px;
@@ -363,6 +364,7 @@ ul{
 }
 
 .njerzit{
+    margin-right: 0;
     position: relative;
     top: -560px;
     width: 1519px;
@@ -810,4 +812,316 @@ ul{
     display: none;
 } */
 
+.paterni{
+    position: absolute;
+    top: 2940px;
+    width: 100%;
+    height: 920px;
+    background-image: url(./Booking/Mask_Group_1_np_pattern.png);
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: #F0E3D0;
+    
+}
+.vija-portokall5{
+    position: absolute;
+    top: 80px;
+    width: 570px;
+    height: 2px;
+    background-color: #FE8369;
+}
+.paterni h3{
+    position: absolute;
+    top: 62px;
+    left: 586px;
+    text-align: left;
+    font-size:  32px;
+    letter-spacing: 1.1px;
+    color: #4B4B4B;
+    opacity: 1;
+}
+.teksti-djathtas{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 405px;
+    height: 500px;
+}
+.teksti-djathtas h4{
+    
+    text-align: left;
+  
+    font: bold 27px/37px Perpetua,Baskerville,Big Caslon,Palatino Linotype,Palatino,URW Palladio L,Nimbus Roman No9 L,serif; 
+    letter-spacing: 2px;
+    color: #4B4B4B;
+    opacity: 1;
+}
+.teksti-djathtas p{
+    position: absolute;
+    top: 100px;
+    text-align: left;
+    font:  13px/35px Muli;
+    letter-spacing: 0;
+    color: #444444;
+    opacity: 1;
+}
+.view-all1, .viewall2{
+    position: absolute;
+    top: 360px;
+    padding-top: 15px;
+    width: 145px;
+    height: 30px;
+    background: #FE8369 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 20px #50302028;
+    border-radius: 5px;
+    text-decoration: none;
+    background-image: url(./Booking/arrow-long.png);
+    background-repeat: no-repeat;
+    background-size: 18px 12px;
+    background-position: 108px 21px;
+    text-align: center;
+    font: 15px/23px Muli;
+    letter-spacing: 0.53px;
+    color: #FFFFFF;
+    opacity: 1;
+    outline: 0;
+    border-style: none; 
+}
+.ora, .njeri, .targeti{
+    width: 265px;
+    height: 265px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #F0E3D0;
+}
+.ora img, .njeri img, .targeti img{
+    size: 50px 50px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
 
+.ora h5, .njeri h5, .targeti h5{
+    position: absolute;
+    top: 115px;
+    left: 30px;
+    text-align: left;
+    font: Bold 18px/40px Perpetua;
+    letter-spacing: 0.6px;
+    color: #4B4B4B;
+    opacity: 1;
+}
+.ora p, .njeri p, .targeti p{
+    width: 200px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    text-align: left;
+    font:  11px/20px Muli;
+    letter-spacing: 0;
+    color: #4B4B4B;
+    opacity: 1;
+
+}
+
+.ora{
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+.njeri{
+    position: absolute;
+    top: 510px;
+    left: 800px;
+
+}
+.targeti{
+    position: absolute;
+    top: 360px;
+    left: 1110px;
+}
+
+.ora:hover{
+    background-color: #FE8369;
+    font: white;
+    background-image: url(./Booking/ora1.png);
+    background-size: 64px 64px;
+    background-position: 30px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.ora:hover h5,.ora:hover p,.targeti:hover h5, .targeti:hover p,.njeri:hover h5, .njeri:hover p {
+    color: white;
+}
+
+
+.targeti:hover {
+    background-color: #FE8369;
+    font: white;
+    background-image: url(./Booking/targeti2.png);
+    background-size: 64px 64px;
+    background-position: 30px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.njeri:hover{
+    background-color: #FE8369;
+    font: white;
+    background-image: url(./Booking/njeri1.png);
+    background-size: 64px 64px;
+    background-position: 30px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.testimonials{
+    position: relative;
+    top: 800px;
+    height: 1000px;
+    
+}
+.vertikal{
+    position: absolute;
+    left: 50%;
+    border-left: 1.8px solid #FE8369;
+    width: 0;
+    height: 121px;
+}
+.testimonials h3{
+    position: absolute;
+    left: 615px;
+    top: 170px;
+    text-align: left;
+    font: Bold 32px/50px Perpetua;
+    letter-spacing: 1.2px;
+    color: #4B4B4B;
+    opacity: 1;
+}
+.circle{
+    position: absolute;
+    top: 270px;
+    left: 670px;
+    background-color:white;
+    border:1px solid #FE8369;    
+    height:170px;
+    width: 170px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    background-image: url(./Booking/Untitled_3.png);
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+}
+.testimonials p{
+    width: 900px;
+    position: absolute;
+    top: 520px;
+    left: 314px;
+    text-align: center;
+    font: Italic 18px/35px Muli;
+    letter-spacing: 0;
+    color: #4B4B4B;
+    opacity: 1;
+}
+.testimonials h5{
+    position: absolute;
+    top: 700px;
+    left: 710px;
+    text-align: center;
+    font: Bold 20px/30px Perpetua;
+    letter-spacing: 0.6px;
+    color: #4B4B4B;
+}
+.testimonials h4{
+    position: absolute;
+    top: 735px;
+    left: 700px;
+    text-align: center;
+    font: Light 18px/30px Muli;
+    letter-spacing: 0.54px;
+    color: #4B4B4B;
+}
+
+.viewall2{
+    position: absolute;
+    top: 830px;
+    left: 688px;
+}
+
+.footer1{
+    position: relative;
+    top: 860px;
+    background-color: #4B4B4B;
+    height: 500px;
+    
+}
+.footer1 h2{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    text-align: left;
+    font: Bold 33px/40px Perpetua;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.footer1 p{
+    position: absolute;
+    top: 210px;
+    left: 280px;
+    width: 1020px;
+    text-align: center;
+    font: Light 12px/35px Muli;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.a1, .a2{
+   
+    width: 160px;
+    height: 28px;
+    text-decoration: none;
+    background: #FE8369 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 20px #50302028;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font: Regular 12px/23px Muli;
+    letter-spacing: 0.54px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.a1{
+    position: absolute;
+    top: 350px;
+    left: 500px;
+}
+.a2{
+    position: absolute;
+    top: 350px;
+    left: 830px;
+}
+.vija-portokall6{
+    position: absolute;
+    top: 380px;
+    left: 720px;
+    width: 88px;
+    border-top: 1.5px solid #FE8369 ;
+}
+.footer2{
+    height: 500px;
+    position: relative;
+    top: 860px;
+    width: 100%;
+    background-color: #4B4B4B;
+}
+
+.vijaportokall7{
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    
+    width: 1000px;
+    border-top: 1.5px solid #FE8369;
+}
