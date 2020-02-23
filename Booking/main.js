@@ -3,6 +3,7 @@ const optionsContainer = document.querySelector(".options-container");
 
 const optionsList = document.querySelectorAll(".option");
 
+
 selected.addEventListener("click", () => {
   optionsContainer.classList.toggle("active");
 });
@@ -13,6 +14,7 @@ optionsList.forEach(p => {
     optionsContainer.classList.remove("active");
   });
 });
+
 
 const selected1 = document.querySelector(".selected1");
 const optionsContainer1 = document.querySelector(".options-container1");
@@ -47,6 +49,52 @@ optionsList2.forEach(q => {
   });
 });
 
+// $(document).mouseup(function (e)
+// {
+//         $('.options-container').hide();
+// });
+
+
+// function showDiv() {
+//   document.getElementById('sign-in').style.display = "block";
+// }
+
+$(document).mouseup(function(e) { 
+  var container = $(".selected"); // target ID or class 
+  var container1 = $(".selected1"); // target ID or class 
+  var container2 = $(".selected2"); // target ID or class 
+  // if the target of the click isn't the container nor a descendant of the container 
+  if (!container.is(e.target) && container.has(e.target).length === 0 && !container1.is(e.target) && container1.has(e.target).length === 0 && !container2.is(e.target) && container2.has(e.target).length === 0) { 
+      // get Event here 
+      $('.active').removeClass('active'); 
+  } 
+  
+}); 
+
+
+// $(document).mouseup(function(e) { 
+//   var container = $(".selected"); // target ID or class 
+  
+//   // if the target of the click isn't the container nor a descendant of the container 
+//   if (!container.is(e.target) && container.has(e.target).length === 0  ) { 
+//       // get Event here 
+//       $('.active').removeClass('active'); 
+//   } 
+// }); 
+
+
+
+
+
+
+// function showDiv() {
+//   var x = document.getElementById('sign-in');
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
 
 
 

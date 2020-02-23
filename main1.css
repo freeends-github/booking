@@ -99,7 +99,7 @@ ul{
     padding-bottom: 5px;
 }
 .phone:hover{
-    border: 1px solid white;
+    background-color: coral;
 }
 .lets{
     position: relative;
@@ -160,7 +160,7 @@ ul{
     background: white;
     position: relative;
     top: 25px;
-    width: 201px;
+    width: 200px;
     height: 120px;
     /* padding-top: 50px; */
     /* height: 100%; */
@@ -169,6 +169,7 @@ ul{
     transition: all 0.4s;
     border-radius: 5px;
     overflow: hidden;
+    display: none;
     
     order: 1;
 }
@@ -183,21 +184,21 @@ ul{
     width: 185px;
     
     position: relative;
-    font-family:  'EB Garamond', serif;
+    font-family: Regular  Perpetua;
     text-align: left;
     letter-spacing: 0.96px;
     color: #4B4B4B;
     font-size: 21px;
     background-image: url(./Booking/6.png);
     background-repeat: no-repeat;
-    background-position: 170px -1px;
+    background-position: 175px -1px;
   
     order: 0;
 }
 .select-box .options-container.active,
 .select-box .options-container1.active,
 .select-box .options-container2.active {
-  
+    display: inline-block;
     opacity: 1;
     overflow-y: scroll;
     
@@ -221,7 +222,7 @@ ul{
 }
 
 .select-box .option,
-.selected,
+.selected ,
 .select-box .option1,
 .selected1,
 .select-box .option2,
@@ -254,7 +255,7 @@ ul{
 
 .label{
     
-    font-family:  'EB Garamond', serif;
+    font-family: Regular  Perpetua;
     text-align: left;
     letter-spacing: 0.96px;
     line-height: 43px;
@@ -273,7 +274,7 @@ ul{
     
     position: relative;
     padding-top: 20px;
-    
+    top: 4px;
     left: 15px;;
     width: 106px;
     height: 19px;
@@ -287,12 +288,12 @@ ul{
 .upper_p1{
     position: relative;
     left: 8px;
-    top: 2px;
+    top: 4px;
 
 }
 .upper_p2{
     position: relative;
-    top: 2px;
+    top: 4px;
     left: 9px;
     padding-bottom: 1px;
 }
@@ -309,9 +310,10 @@ ul{
     opacity: 1;
 }
 #d2{
-    position: relative;
+    position: absolute;
     left: 259px;
-    top: -196px;
+    top: 0px;
+    display: inline-block;
 }
 .vijat1{
     position: relative;
@@ -324,9 +326,10 @@ ul{
 
 }
 #d3{
-    position: relative;
+    position: absolute;
+    display: inline-block;
     left: 487px;
-    top: -388px;
+    top: 0px;
     margin-right: 0;
     width: fit-content;
 }
@@ -623,6 +626,7 @@ ul{
 }
 .filteri .button1{
     margin: 0;
+    margin-right: 15px;
     height: 40px;
     text-align: center;
     font: 18px/45px "MyFirstFont";
@@ -631,7 +635,7 @@ ul{
     background-color: white;
     border-style: none;
     opacity: 1;
-    padding-right: 15px;
+   padding-right: 5px;
     padding-bottom: 0;
 
 }
@@ -645,14 +649,19 @@ ul{
 
 
 .content{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 400px 400px 400px; 
+    grid-column-gap: 57.5px;
+    grid-row-gap: 80px;
     margin-left: 10.8%;
     position: relative;
     top: -175px;
     left: 0;
     height: 1000px;
 }
-.foto1, .foto2, .foto3, .foto4 ,.foto5, .foto6 , .foto7{
-    display: inline-block;
+.foto1, .foto2, .foto3, .foto4 ,.foto5, .foto6 {
+    /* display: inline-block; */
     
     width: 350px;
     height: 400px;
@@ -665,8 +674,8 @@ ul{
     border-radius: 5px;
     opacity: 1;
 }
-.foto1 h5, .foto2 h5, .foto3 h5, .foto4 h5,.foto5 h5, .foto6 h5 , .foto7 h5{
-    position: absolute;
+.foto1 h5, .foto2 h5, .foto3 h5, .foto4 h5,.foto5 h5, .foto6 h5 {
+    position: relative;
     top: 300px;
     left: 30px;
     text-align: left;
@@ -677,24 +686,24 @@ ul{
     opacity: 1;
 
 }
-.foto1 .bed, .foto2 .bed, .foto3 .bed, .foto4 .bed ,.foto5 .bed, .foto6 .bed, .foto7 .bed{
-    position: absolute;
-    top: 350px;
+.foto1 .bed, .foto2 .bed, .foto3 .bed, .foto4 .bed ,.foto5 .bed, .foto6 .bed{
+    position: relative;
+    top: 330px;
     left: 30px;
 }
-.foto1 .p1, .foto2 .p1, .foto3 .p1, .foto4 .p1 ,.foto5 .p1, .foto6 .p1, .foto7 .p1{
-    position: absolute;
-    top: 340px;
-    left: 60px;
+.foto1 .p1, .foto2 .p1, .foto3 .p1, .foto4 .p1 ,.foto5 .p1, .foto6 .p1{
+    position: relative;
+    top: 302px;
+    left: -103px;
     text-align: center;
     font:  13px/35px Montserrat;
     letter-spacing: 0;
     color: #4B4B4B;
     opacity: 1;
 }
-.foto1 .vija-hiri1, .foto2 .vija-hiri1, .foto3 .vija-hiri1, .foto4 .vija-hiri1,.foto5 .vija-hiri1, .foto6 .vija-hiri1, .foto7 .vija-hiri1{
-    position: absolute;
-    top: 343px;
+.foto1 .vija-hiri1, .foto2 .vija-hiri1, .foto3 .vija-hiri1, .foto4 .vija-hiri1,.foto5 .vija-hiri1, .foto6 .vija-hiri1{
+    position: relative;
+    top: 273px;
     left: 103px;
     width: 0px;
     height: 25px;
@@ -702,35 +711,35 @@ ul{
     opacity: 1;
     
 }
-.foto1 .bath, .foto2 .bath, .foto3 .bath, .foto4 .bath ,.foto5 .bath, .foto6 .bath , .foto7 .bath{
-    position: absolute;
-    top: 347px;
+.foto1 .bath, .foto2 .bath, .foto3 .bath, .foto4 .bath ,.foto5 .bath, .foto6 .bath {
+    position: relative;
+    top: 250px;
     left: 124px;
 }
 
-.foto1 .p2, .foto2 .p2, .foto3 .p2, .foto4 .p2 ,.foto5 .p2, .foto6 .p2, .foto7 .p2{
-    position: absolute;
-    top: 340px;
-    left: 153px;
+.foto1 .p2, .foto2 .p2, .foto3 .p2, .foto4 .p2 ,.foto5 .p2, .foto6 .p2{
+    position: relative;
+    top: 222px;
+    left: -11px;
     text-align: center;
     font:  13px/35px Montserrat;
     letter-spacing: 0;
     color: #4B4B4B;
     opacity: 1;
 }
-.foto1 .vija-hiri2, .foto2 .vija-hiri2, .foto3 .vija-hiri2, .foto4 .vija-hiri2 ,.foto5 .vija-hiri2, .foto6 .vija-hiri2, .foto7 .vija-hiri2{
-    position: absolute;
-    top: 343px;
+.foto1 .vija-hiri2, .foto2 .vija-hiri2, .foto3 .vija-hiri2, .foto4 .vija-hiri2 ,.foto5 .vija-hiri2, .foto6 .vija-hiri2{
+    position: relative;
+    top: 192px;
     left: 190px;
     width: 0px;
     height: 25px;
     border-left: 1px solid #D5CAB8;
     opacity: 1;
 } 
-.foto1 a, .foto2 a, .foto3 a, .foto4 a,.foto5 a, .foto6 a, .foto7 a{
-    position: absolute;
-    top: 338px;
-    left: 230px;
+.foto1 a, .foto2 a, .foto3 a, .foto4 a,.foto5 a, .foto6 a{
+    position: relative;
+    top: 170px;
+    left: 243px;
     width: 90px;
     height: 20px;
     background-color: #FE8369;
@@ -738,41 +747,46 @@ ul{
     text-decoration: none;
     text-align: center;
     padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
     font: Bold 14px/20px Muli;
     letter-spacing: 0.6px;
     opacity: 1;
 }
 
 .foto1{
-    position: absolute;
-    left: 0;
+    /* position: absolute;
+    left: 0; */
 }
 .foto2{
-    position: absolute;
-    left: 407.5px;
+    /* position: absolute;
+    left: 407.5px; */
     background-image: url(./Booking/pexels_photo_2121121.png);
 }
 
 .foto3{
-    position: absolute;
-    left: 815px;
+    /* position: absolute;
+    left: 815px; */
     background-image: url(./Booking/pexels_photo_2098443.png);
 }
 
 .foto4{
-    position: absolute;
-    top: 480px;
+    /* position: absolute;
+    top: 480px; */
     background-image: url(./Booking/pexels_photo_2128347.png);
+
 }
 .foto5{
-    position: absolute;
+    /* position: absolute;
     top: 480px;
-    left: 407.5px;
+    left: 407.5px; */
+    display: none;
+    
 }
 .foto6{
-    position: absolute;
+    /* position: absolute;
     top: 480px;
-    left: 815px;
+    left: 815px; */
     background-image: url(./Booking/pexels_photo_1974596.png);
     display: none;
 }
@@ -1110,7 +1124,7 @@ ul{
     border-top: 1.5px solid #FE8369 ;
 }
 .footer2{
-    height: 500px;
+    height: 480px;
     position: relative;
     top: 860px;
     width: 100%;
@@ -1120,8 +1134,195 @@ ul{
 .vijaportokall7{
     position: absolute;
     top: 30px;
-    left: 300px;
+    left: 165px;
     
-    width: 1000px;
-    border-top: 1.5px solid #FE8369;
+    width: 1200px;
+    border-top: 1px solid #FE8369;
+}
+
+
+.social img{
+    position: absolute;
+    left: 10.8%;
+    top: 100px;
+    width: 82px;
+    height: 60px;
+}
+.social h5{
+    position: absolute;
+    left: 10.8%;
+    top: 170px;
+    text-align: left;
+    font: Bold 32px/50px Perpetua;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+    opacity: 1;   
+}
+.rreth{
+    border: 1px solid #F0E3D0;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-position: 13.5px 9px;
+    background-repeat: no-repeat;
+
+}
+.rrethi1{
+    position: absolute;
+    left: 164px;
+    top: 232px;
+    background-image: url(./Booking/facebook.png);
+}
+.rrethi2{
+    position: absolute;
+    left: 214px;
+    top: 232px;
+    background-position: 6px 5px;
+    background-image: url(./Booking/twiter.png);
+}
+
+.rrethi3{
+    position: absolute;
+    left: 268px;
+    top: 232px;
+    background-position: 6.5px 10px;
+    background-image: url(./Booking/google-plus.png);
+}
+.rrethi4{
+    position: absolute;
+    left: 320px;
+    top: 232px;
+    background-position: 10px 10px;
+    background-image: url(./Booking/instagram.png);
+}
+
+.lista1 h5,.lista2 h5,.lista3 h5,.lista4 h5 {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    text-align: left;
+    font: Bold 15px/50px Perpetua;
+    letter-spacing: 0.54px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.lista1 .vija-portokall8, .lista2 .vija-portokall9, .lista3 .vija-portokall10, .lista4 .vija-portokall11{
+        position: absolute;
+        top: 75px;
+        left: 152px;
+        width: 28px;
+        border-top: 4px solid #FE8369;
+}
+.lista1 ul,.lista2 ul,.lista3 ul,.lista4 ul{
+    position: absolute;
+    top: 125px;
+    left: 130px;
+    margin: 0;
+    width: 180px;
+}
+.lista1 li, .lista2 li, .lista3 li,.lista4 li{
+    display: block;
+    padding-bottom: 15px;
+}
+.lista1 a, .lista2 a,.lista3 a,.lista4 a{
+    text-decoration: none;
+    text-align: left;
+    font: Light 11px/35px Muli;
+    font-size: 13px;
+    letter-spacing: 0;
+    color: #F0E3D0;
+    opacity: 1;
+}
+.lista1{
+    position: absolute;
+    top: 58px;
+    left: 350px;
+    width: 250px;
+    height: 300px;
+}
+.lista2{
+    position: absolute;
+    top: 58px;
+    left: 530px;
+    width: 250px;
+    height: 300px;
+}
+.lista3{
+    position: absolute;
+    top: 58px;
+    left: 700px;
+    width: 250px;
+    height: 300px;
+}
+.lista4{
+    position: absolute;
+    top: 58px;
+    left: 900px;
+    width: 250px;
+    height: 300px;
+}
+
+input[type=text]{
+    position: absolute;
+    top: 128px;
+    left: 150px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #F0E3D0;
+    border-radius: 5px;
+    background-color: #4B4B4B;
+    text-align: left;
+    font-family:  Muli;
+    font-size: 13px;
+    
+    opacity: 1;
+}
+::placeholder{
+    color: #F0E3D0;
+    padding-left: 15px;
+
+}
+
+input[type=submit] {
+    position: absolute;
+    top: 127px;
+    left: 364px;
+    height: 43px;
+    font-size: 12px;
+    background-color: #FE8369;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+   background-color: coral;
+  }
+
+.vijaportokall12{
+    position: absolute;
+    top: 400px;
+    left: 165px;
+    
+    width: 1200px;
+    border-top: 1px solid #FE8369;
+
+}
+.copy{
+    position: absolute;
+    top: 430px;
+    left: 575px;
+    text-align: left;
+    font-family:  Muli;
+    font-size: 13px;
+    letter-spacing: 0;
+    color: #F0E3D0;
+    opacity: 1;
 }
