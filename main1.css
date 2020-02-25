@@ -91,6 +91,10 @@ ul{
     vertical-align: middle;
     padding-right: 7px;
 }
+.is-animated {
+    animation: .6s zoom-in;
+  }
+ 
 .home:hover,
 .home:focus
 {
@@ -161,7 +165,7 @@ ul{
     position: relative;
     top: 25px;
     width: 200px;
-    height: 120px;
+    height: 135px;
     /* padding-top: 50px; */
     /* height: 100%; */
     /* width: 100%; */

@@ -197,7 +197,7 @@
         <div class="filteri" > 
             <button class="viewall  filter_link" data-filter="all"  id="hide" >View All</button>
 
-            <button class="button1 filter_link" data-filter="rent" id="show" >Rent</button>
+            <button class="button1 filter_link" data-filter="rent" id="show">Rent</button>
             <button class="button1 filter_link" data-filter="sell" id="show">Sell</button>
             <button class="button1 filter_link" data-filter="buy"  id="show" >Buy</button>
         </div>
@@ -205,7 +205,7 @@
 
         <div class="content">
          
-            <div class="foto foto1  rent sell buy ">
+            <div class="foto foto1  rent sell buy "  data-category="buy,sell" >
                 <h5>Fulton Street,    Apt P101,    New York</h5>
                 <img src="./Booking/bed.png" alt="bed" class="bed">
                 <p class="p1">2bd</p> <div class="vija-hiri1"></div>
@@ -214,7 +214,7 @@
                 <a href="#" class="mini-price">$6,500 </a>
             </div>
 
-            <div class="foto foto2  rent ">
+            <div class="foto foto2  rent " data-category="rent,sell" >
                 <h5>Fulton Street, Apt P101, New York</h5>
                 <img src="./Booking/bed.png" alt="bed" class="bed">
                 <p class="p1">2bd</p> <div class="vija-hiri1"></div>
@@ -223,7 +223,7 @@
                 <a href="#" class="mini-price">$6,500 </a>
             </div>
 
-            <div class="foto foto3 rent sell buy" >
+            <div class="foto foto3 rent sell buy" data-category="buy,rent,sell"  >
                 <h5>Fulton Street, Apt P101, New York</h5>
                 <img src="./Booking/bed.png" alt="bed" class="bed">
                 <p class="p1">2bd</p> <div class="vija-hiri1"></div>
@@ -232,7 +232,7 @@
                 <a href="#" class="mini-price">$6,500 </a>
             </div>
 
-            <div class="foto foto4 sell rent" >
+            <div class="foto foto4 sell rent"  data-category="buy,rent" >
                 <h5>Fulton Street, Apt P101, New York</h5>
                 <img src="./Booking/bed.png" alt="bed" class="bed">
                 <p class="p1">2bd</p> <div class="vija-hiri1"></div>
@@ -241,7 +241,7 @@
                 <a href="#" class="mini-price">$6,500 </a>
             </div>
 
-            <div class="foto foto5 buy">
+            <div class="foto foto5 buy" data-category="rent,sell" >
                 <h5>Fulton Street, Apt P101, New York</h5>
                 <img src="./Booking/bed.png" alt="bed" class="bed">
                 <p class="p1">2bd</p> <div class="vija-hiri1"></div>
@@ -250,7 +250,7 @@
                 <a href="#" class="mini-price">$6,500 </a>
             </div>
 
-            <div class="foto foto6 sell buy">
+            <div class="foto foto6 sell buy" data-category="buy,sell" >
                 <h5>Fulton Street, Apt P101, New York</h5>
                 <img src="./Booking/bed.png" alt="bed" class="bed">
                 <p class="p1">2bd</p> <div class="vija-hiri1"></div>
@@ -373,10 +373,10 @@
         <p class="copy">Copyright © 2019 Property Agent. All rights reserved.</p> 
     </div>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
   <script src="./Booking/main.js"></script>
-  <script src="./Booking/filteri.js"></script>
+
   <script src="./Booking/isotope.pkgd.min.js"></script>
  </body>
 </html>

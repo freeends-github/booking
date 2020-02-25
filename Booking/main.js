@@ -98,20 +98,61 @@ $(document).mouseup(function(e) {
 
 
 
-var $mediaElements = $('.foto');
+//filteri --->
 
-$('.filter_link').click(function(e){
+// var $mediaElements = $('.foto');
+
+// $('.filter_link').click(function(e){
+//     e.preventDefault();
+//     // get the category from the attribute
+//     var filterVal = $(this).data('filter');
+
+//     if(filterVal === 'all'){
+//       $mediaElements.show();
+//     }else{
+//        // hide all then filter the ones to show
+//        $mediaElements.hide().filter('.' + filterVal).show();
+//     }
+// });
+
+
+
+(function($) {
+
+  'use strict';
+
+  var $filters = $('.filteri [data-filter]'),
+    $boxes = $('.content [data-category]');
+  
+
+  $filters.on('click', function(e) {
     e.preventDefault();
-    // get the category from the attribute
-    var filterVal = $(this).data('filter');
+    var $this = $(this);
+    
+    $filters.removeClass('active');
+    $this.addClass('active');
 
-    if(filterVal === 'all'){
-      $mediaElements.show();
-    }else{
-       // hide all then filter the ones to show
-       $mediaElements.hide().filter('.' + filterVal).show();
+    var $filterColor = $this.attr('data-filter');
+
+    if ($filterColor == 'all') {
+      $boxes.removeClass('is-animated')
+        .fadeOut().finish().promise().done(function() {
+          $boxes.each(function(i) {
+            $(this).addClass('is-animated').delay((i++) * 200).fadeIn();
+          });
+        });
+    } else {
+      $boxes.removeClass('is-animated')
+        .fadeOut().finish().promise().done(function() {
+          $boxes.filter('[data-category *= "' + $filterColor + '"]').each(function(i) {
+            $(this).addClass('is-animated').delay((i++) * 200).fadeIn();
+          });
+        });
     }
-});
+  });
+
+})(jQuery);
+
 
 
 $(document).ready(function(){
